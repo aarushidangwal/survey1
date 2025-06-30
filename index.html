@@ -8,21 +8,38 @@
 <body>
     <h1><u>MY SURVEY </u></h1>
 <form action=".submitform.php" method="post">
-<br>
 <p> Fill this survey:</p>
 <br>
+<u>Name</u>:
+ <input type="name" placeholder="Enter your name">
 <br>
-Name: <input type="name" placeholder="Enter your name">
 <br>
-<br>
-Email: 
+<u>Email</u>: 
 <input type="email" id="email" placeholder="Enter your mail"> <label for="email"></label>
 <br>
 <br>
-Password: <input type="password" placeholder="Enter your password">
+<u>Password</u>:
+ <input type="password" placeholder="Enter your password">
 <br>
 <br>
-Age: <input type="date" placeholder="Enter your date">
+<u>Age</u> : 
+ <input type="date" placeholder="Enter your date">
+<br>
+<br>
+<u>Gender</u>:
+<label for="male">Male</label>
+<input type="radio" id="male" value="man" name="gender">
+<label for="female">Female</label>
+<input type="radio" id="female" value="female" name="gender">
+<label for="others">Others</label>
+<input type="radio" id="others" value="others" name="gender">
+<br>
+<br>
+<u>Favourite Hobby</u>: 
+<label for="reading">Reading</label>
+<input type="checkbox" id="checkbox" value="hobby">
+<label for="dancing">Dancing</label>
+<input type="checkbox" id="dancing" value="hobby">
 <br>
 <br>
 Select your country: 
@@ -31,20 +48,23 @@ Select your country:
     <option value="India">India</option>
     <option value="USA">USA</option>
     <option value="UK">UK</option>
+    <option value="China">China</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Turkey">Turkey</option>
+    <option value="Madagascar">Madagascar</option>
 </select>
 <br>
 <br>
-    Do You like being a citizen in this country: 
+<label for="rating"> Rate our service (1 to 5):
     <br>
-<label for="yes"> Yes </label>
-<input type="radio" id="yes" name="yesorno" value="yes">
-<br>
-<label for="no">No</label>
-<input type="radio" name="yesorno" id="no" value="no">
+ 1
+<input type="range" id="rating" name="1to5" value="rating">
+ 5
 <hr>
 Feedback here:
 <br>
-<textarea rows="20"cols="60"> Give your feedback here: 
+<input type="text" placeholer="Comment here">
+<textarea rows="11" cols="18">Comment here 
 </textarea>
 <br>
 <input type="submit" placeholder="Submit">
