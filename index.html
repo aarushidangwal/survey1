@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u>MY SURVEY </u></h1>
+<form action=".submitform.php" method="post">
+<br>
+Name: <input type="name" placeholder="Enter your name">
+<br>
+<br>
+Email: 
+<input type="email" id="email" placeholder="Enter your mail"> <label for="email"></label>
+<br>
+<br>
+Password: <input type="password" placeholder="Enter your password">
+<br>
+<br>
+Age: <input type="date" placeholder="Enter your date">
+<br>
+<br>
+Select your country: 
+<label for="country"></label>
+<select id="country" name="country">
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+</select>
+<BR>
+<Br>
+    Do You like being a citizen in this country: 
+    <br>
+<label for="yes"> Yes </label>
+<input type="radio" id="yes" name="yesorno" value="yes">
+<br>
+<label for="no">No</label>
+<input type="radio" name="yesorno" id="no" value="no">
+<hr>
+Feedback here:
+<br>
+<textarea rows="20"cols="60"> Give your feedback here: 
+</textarea>
+<br>
+<input type="submit" placeholder="Submit">
+</form>
+</body>
+</html>
